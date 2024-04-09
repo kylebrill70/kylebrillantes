@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+
+.parent-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #bc2229, #c00041, #be005a, #b30075, #a0008f, #93009e, #7e00af, #5e14c0, #571ec7, #4d26cf, #412dd6, #3133dd);
+  display: flex;
+  flex-direction: row;
+}
+
+.first-child {
+  height: 100%; /* Set the height to match the parent container */
+  width: 40%;
+  position: relative;
+}
+
+
+.content {
+  position: relative;
+  height: 100%; /* Set the height to match the parent container */
+  width: 100%; /* Set the width to match the parent container */
+}
+
+.img-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.img-container img {
+  margin-left: 40px;
+  width: 300px; /* Adjust this to your desired size */
+  height: 300px; /* Adjust this to your desired size */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50px;
+}
+
+.blob-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob-container svg {
+  width: 500px; /* Adjust this to your desired size */
+  height: 500px; /* Adjust this to your desired size */
+  margin-top: 30px;
+}
+.second-child {
+  height: 100%; /* Set the height to match the parent container */
+  width: 70%;
+  padding-left: 100px;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Align items vertically */
+}
+
+.header-text,
+.button-container {
+  margin: 10px; /* Add some margin */
+}
+
+.header-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 65px;
+  background: linear-gradient(50deg, rgb(7, 205, 255), rgb(255, 199, 43), rgb(255, 27, 27)); /* Define your gradient colors */
+  -webkit-background-clip: text; /* Clip the text with the background */
+  -webkit-text-fill-color: transparent; /* Set the text fill color transparent */
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #46cef0;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
