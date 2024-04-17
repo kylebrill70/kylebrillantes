@@ -7,23 +7,72 @@
 </head>
 
 
-<body style="background-color: aqua;">
+<body style="background-color: rgb(198, 198, 198);">
   <style>
-    .content{
-      width: 500px;
-      height: 300px;
-      margin-left: 30px;
-    }
-    .wrapper{
-      display: flex;
-      flex-direction: row;
-      padding-top: 30px;
-    }
+@keyframes gradient {
+  0% {background-position: 0%;}
+  50% {background-position: 100%;}
+  100% {background-position: 0%;}
+}
+
+.content{
+  width: 500px;
+  height: 300px;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 6px rgba(33, 32, 32, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  align-items: center;
+}
+
+
+
+.profile-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #fa5300;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
   </style>
       <a href="index.html">Home</a>
       <a href="exercises.html">Exercise</a>
+      <a href="exercise-13-Tables.html">Skills</a>
       <a href="exercise-10-designs.html">Designs</a>
       <a href="https://www.facebook.com/mia.brillantes.7">Facebook</a>
+      <a href="Contact-Me.html">Contact Me</a>
+
   <div class="wrapper">
     <div class="img-wrapper">
       <img src="433472466_7319374488122023_8116991745744891717_n.jpg" alt="Profile" height="200px" width="200px">

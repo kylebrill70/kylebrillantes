@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+          /* border: 0.5px dotted green; */
+          /* color: rgb(0, 0, 0); */
+        }
+        
+        html {
+          font-size: 62.5%;
+        }
+        
+        ul,
+        ol {
+          list-style: none;
+        }
+        
+        a {
+          text-decoration: none;
+        }
+        
+        body {
+          font-size: 1.6rem;
+          overflow-wrap: break-word;
+          text-wrap: pretty;
+          hyphens: auto;
+          font-family: "Merriweather", serif;
+          line-height: 1.5;
+        }
+        
+        /* wrap all of the content inside the body to a div with a class of "site" */
+        .site {
+          min-height: 100dvh;
+          display: grid;
+          grid-template-rows: auto 1fr auto;
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        main {
+            margin-left: 1em;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #9bc8ef;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin-left: 1rem;
+        }
+
+        img {
+            transition: all .3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+            box-shadow: -1px 8px 9px #c845e0;
+            border-radius: 1.3em;
+            /* transform: translateX(1rem); */
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header>
+            <h1>All the Animals</h1>
+        </header>
+        <main>
+            <picture>
+                <h2>Rabbit:</h2>
+                <img src="Folder0/rabbit.png" alt="rabbit">
+            </picture>
+            <picture>
+                <h2>Cat:</h2>
+                <img src="Folder0/Folder3/cat.png" alt="cat">
+            </picture>
+            <picture>
+                <h2>Dog:</h2>
+                <img src="dog.png" alt="dog">
+            </picture>
+            <picture>
+                <h2>Fish:</h2>
+                <img src="Folder1/fish.png" alt="fish">
+            </picture>
+            <picture>
+                <h2>Bird:</h2>
+                <img src="Folder1/Folder2/bird.png" alt="bird">
+            </picture>
+        </main>
+    </div>
+</body>
+</html>
